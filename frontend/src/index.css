@@ -1,0 +1,236 @@
+/* google font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap");
+
+/* layout */
+:root {
+  --primary: #57565a;
+  --error: #e7195a;
+}
+body {
+  background: #f1f1f1;
+  margin: 0;
+  font-family: "Poppins";
+}
+header {
+  background: #fff;
+}
+header .container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header a {
+  color: #333;
+  text-decoration: none;
+}
+.pages {
+  max-width: 1400px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.home {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  grid-gap: 100px;
+}
+.post-container {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05);
+  position: relative;
+}
+.post-details {
+  margin: 20px auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.post-details h4 {
+  margin: 0 0 10px 0;
+  font-size: 1.2em;
+  color: var(--primary);
+}
+
+.workout-details span {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  background: #f1f1f1;
+  padding: 6px;
+  border-radius: 50%;
+  color: #333;
+}
+/* new workout form */
+label,
+input {
+  display: block;
+}
+input {
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+form button {
+  background: var(--primary);
+  border: 0;
+  color: #fff;
+  padding: 10px;
+  font-family: "Poppins";
+  border-radius: 4px;
+  cursor: pointer;
+}
+.error {
+  padding: 10px;
+  background: #ffefef;
+  border: 1px solid var(--error);
+  color: var(--error);
+  border-radius: 4px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.del {
+  float: right;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+  color: var(--error);
+  font-size: 20px;
+}
+
+.image-view-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 4px;
+}
+.image-view-container img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  padding: 2px;
+}
+/* new */
+
+.file-upload-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  /* border: 2px dashed #ccc;
+  border-radius: 10px; */
+  padding: 20px;
+  margin: 10px 0;
+  /* animation: pulse 2s ease-in-out infinite; */
+}
+
+.file-upload-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  margin-top: 10px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.file-upload-item-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.file-upload-item-preview {
+  border-radius: 5px;
+  padding: 4px;
+}
+.file-upload-item-name {
+  font-size: 14px;
+  font-weight: 400;
+}
+.file-upload-item-size {
+  font-size: 12px;
+  font-weight: bold;
+  background-color: #08f7a8;
+  text-align: center;
+  padding: 2px;
+  color: #fff;
+  border-radius: 15px;
+  margin-top: 4px;
+}
+.file-upload-item-actions button {
+  background: transparent;
+  border: none;
+  color: rgb(248, 53, 53);
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.file-upload-item-actions button:hover {
+  text-decoration: underline;
+}
+.file-upload-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+@keyframes pulse {
+  0% {
+    border-color: #29bb89;
+  }
+  50% {
+    border-color: #f0f0f0;
+  }
+  100% {
+    border-color: #29bb89;
+  }
+}
+
+.animated-border {
+  background: linear-gradient(90deg, #ccc 50%, transparent 50%),
+    linear-gradient(90deg, #ccc 50%, transparent 50%),
+    linear-gradient(0deg, #ccc 50%, transparent 50%),
+    linear-gradient(0deg, #ccc 50%, transparent 50%);
+  background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+  background-size: 12px 2px, 12px 2px, 2px 12px, 2px 12px;
+  background-position: 0% 0%, 100% 100%, 0% 100%, 100% 0px;
+  border-radius: 10px;
+  animation: dash 8s linear infinite;
+}
+
+@keyframes dash {
+  to {
+    background-position: 100% 0%, 0% 100%, 0% 0%, 100% 100%;
+  }
+}
+
+.close-img {
+  position: absolute;
+  top: 0;
+  right: 2%;
+
+  background-color: rgb(241, 59, 59);
+  border-radius: 50%;
+  border: 1px solid transparent;
+  color: #fff;
+  font-size: 12px;
+  padding: 2px;
+  height: 25px;
+  width: 25px;
+}
