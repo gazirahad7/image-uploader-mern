@@ -17,4 +17,4 @@
 
 ## Screenshots
 
-![image](https://github.com/gazirahad7/task-image-uploader-mern/assets/65822873/6d0972a1-ef42-4b30-bc22-52951a385737)
+![image](https://github.com/gazirahad7/image-uploader-mern/assets/65822873/e7e92132-5e88-4abe-8a30-d053ed7f2297)
